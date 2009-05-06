@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chomo", "Chomo\Chomo.csproj", "{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Chomo\include\Core\Core.csproj", "{59129078-7B12-4198-B93E-0AA08D0BB7ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMLib", "Chomo\include\KMLib\KMLib.csproj", "{29976BA4-A04D-4A80-A866-098C879C2FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		test|Any CPU = test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.test|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDE92EA-DEAD-4DF2-88DD-1A51273DD24F}.test|Any CPU.Build.0 = Release|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.test|Any CPU.ActiveCfg = Release|Any CPU
+		{59129078-7B12-4198-B93E-0AA08D0BB7ED}.test|Any CPU.Build.0 = Release|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.test|Any CPU.ActiveCfg = Release|Any CPU
+		{29976BA4-A04D-4A80-A866-098C879C2FDE}.test|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

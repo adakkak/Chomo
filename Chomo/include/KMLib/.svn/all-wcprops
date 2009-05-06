@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/5/trunk/KMLib
+END
+Snippet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/KMLib/Snippet.cs
+END
+Document.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/4/trunk/KMLib/Document.cs
+END
+Coordinates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/KMLib/Coordinates.cs
+END
+Link.cs
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/KMLib/Link.cs
+END
+Icon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/KMLib/Icon.cs
+END
+CoordManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/KMLib/CoordManager.cs
+END
+BoundaryIs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/KMLib/BoundaryIs.cs
+END
+Region.cs
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/KMLib/Region.cs
+END
+LookAt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/KMLib/LookAt.cs
+END
+Style.cs
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/KMLib/Style.cs
+END
+Metadata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2/trunk/KMLib/Metadata.cs
+END
+LatLonAltBox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/KMLib/LatLonAltBox.cs
+END
+kml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/5/trunk/KMLib/kml.cs
+END
+KMLib.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/KMLib/KMLib.csproj
+END
+Lod.cs
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/KMLib/Lod.cs
+END

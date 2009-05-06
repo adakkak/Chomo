@@ -1,0 +1,5 @@
+C:\lib\kml-sharp\Core\bin\Release\Core.dll
+C:\lib\kml-sharp\Core\bin\Release\Core.pdb
+C:\lib\kml-sharp\Core\obj\Release\ResolveAssemblyReference.cache
+C:\lib\kml-sharp\Core\obj\Release\Core.dll
+C:\lib\kml-sharp\Core\obj\Release\Core.pdb

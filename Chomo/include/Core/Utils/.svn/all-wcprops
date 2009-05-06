@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/3/trunk/Core/Utils
+END
+ColorUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/Core/Utils/ColorUtils.cs
+END
+MathUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/Core/Utils/MathUtils.cs
+END
+MiscUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/Core/Utils/MiscUtils.cs
+END
+StringUtils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/Core/Utils/StringUtils.cs
+END

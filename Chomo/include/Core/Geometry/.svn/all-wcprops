@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/Core/Geometry
+END
+RectangleE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3/trunk/Core/Geometry/RectangleE.cs
+END
+PointE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/Core/Geometry/PointE.cs
+END
+Calc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3/trunk/Core/Geometry/Calc.cs
+END
+AShapeE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/Core/Geometry/AShapeE.cs
+END
+SizeE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/3/trunk/Core/Geometry/SizeE.cs
+END
+Point3D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/Core/Geometry/Point3D.cs
+END
+IntervalE.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/Core/Geometry/IntervalE.cs
+END

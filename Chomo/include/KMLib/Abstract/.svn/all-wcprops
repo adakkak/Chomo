@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/5/trunk/KMLib/Abstract
+END
+ALink.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/KMLib/Abstract/ALink.cs
+END
+ATimePrimitive.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/KMLib/Abstract/ATimePrimitive.cs
+END
+ASchemaField.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/KMLib/Abstract/ASchemaField.cs
+END
+AFeature.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/KMLib/Abstract/AFeature.cs
+END
+AGeometry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/KMLib/Abstract/AGeometry.cs
+END
+AContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/KMLib/Abstract/AContainer.cs
+END
+AObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/KMLib/Abstract/AObject.cs
+END
+AColorStyle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/KMLib/Abstract/AColorStyle.cs
+END
+AOverlay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4/trunk/KMLib/Abstract/AOverlay.cs
+END
+AStyleSelector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/KMLib/Abstract/AStyleSelector.cs
+END

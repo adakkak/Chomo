@@ -1,0 +1,7 @@
+C:\lib\kml-sharp\KMLib\bin\Release\KMLib.dll
+C:\lib\kml-sharp\KMLib\bin\Release\KMLib.pdb
+C:\lib\kml-sharp\KMLib\bin\Release\Core.dll
+C:\lib\kml-sharp\KMLib\bin\Release\Core.pdb
+C:\lib\kml-sharp\KMLib\obj\Release\ResolveAssemblyReference.cache
+C:\lib\kml-sharp\KMLib\obj\Release\KMLib.dll
+C:\lib\kml-sharp\KMLib\obj\Release\KMLib.pdb

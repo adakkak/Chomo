@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/5/trunk/KMLib/Geometry
+END
+MultiGeometry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/KMLib/Geometry/MultiGeometry.cs
+END
+Polygon.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/KMLib/Geometry/Polygon.cs
+END
+Model.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/KMLib/Geometry/Model.cs
+END
+LineString.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/KMLib/Geometry/LineString.cs
+END
+LinearRing.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/KMLib/Geometry/LinearRing.cs
+END
+Point.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/KMLib/Geometry/Point.cs
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/3/trunk/Core/Xml
+END
+XmlDictionary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/Core/Xml/XmlDictionary.cs
+END
+XmlTypeAssociator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/Core/Xml/XmlTypeAssociator.cs
+END
+XmlItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/Core/Xml/XmlItem.cs
+END
+XmlSerializer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/Core/Xml/XmlSerializer.cs
+END
+XmlIdDictionary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3/trunk/Core/Xml/XmlIdDictionary.cs
+END
+XmlList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/Core/Xml/XmlList.cs
+END
+AXmlHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/Core/Xml/AXmlHandler.cs
+END

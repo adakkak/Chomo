@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpMap.UI</name>
+    </assembly>
+    <members>
+        <member name="T:SharpMap.Forms.MapImage">
+            <summary>
+            MapImage Class - MapImage control for Windows forms
+            </summary>
+            <remarks>
+            The MapImage control adds basic functionality to a Windows Form, such as dynamic pan, zoom and data query.
+            </remarks>
+        </member>
+        <member name="M:SharpMap.Forms.MapImage.#ctor">
+            <summary>
+            Initializes a new map
+            </summary>
+        </member>
+        <member name="M:SharpMap.Forms.MapImage.Refresh">
+            <summary>
+            Refreshes the map
+            </summary>
+        </member>
+        <member name="P:SharpMap.Forms.MapImage.Map">
+            <summary>
+            Map reference
+            </summary>
+        </member>
+        <member name="P:SharpMap.Forms.MapImage.QueryLayerIndex">
+            <summary>
+            Gets or sets the index of the active query layer 
+            </summary>
+        </member>
+        <member name="P:SharpMap.Forms.MapImage.ActiveTool">
+            <summary>
+            Sets the active map tool
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MouseMove">
+            <summary>
+            Fires when mouse moves over the map
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MouseDown">
+            <summary>
+            Fires when map received a mouseclick
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MouseUp">
+            <summary>
+            Fires when mouse is released
+            </summary>		
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MouseDrag">
+            <summary>
+            Fired when mouse is dragging
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MapRefreshed">
+            <summary>
+            Fired when the map has been refreshed
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MapZoomChanged">
+            <summary>
+            Fired when the zoom value has changed
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MapZooming">
+            <summary>
+            Fired when the map is being zoomed
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MapQueried">
+            <summary>
+            Fired when the map is queried
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.MapCenterChanged">
+            <summary>
+            Fired when the center of the map has changed
+            </summary>
+        </member>
+        <member name="E:SharpMap.Forms.MapImage.ActiveToolChanged">
+            <summary>
+            Fired when the active map tool has changed
+            </summary>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.Tools">
+            <summary>
+            Map tools enumeration
+            </summary>
+        </member>
+        <member name="F:SharpMap.Forms.MapImage.Tools.Pan">
+            <summary>
+            Pan
+            </summary>
+        </member>
+        <member name="F:SharpMap.Forms.MapImage.Tools.ZoomIn">
+            <summary>
+            Zoom in
+            </summary>
+        </member>
+        <member name="F:SharpMap.Forms.MapImage.Tools.ZoomOut">
+            <summary>
+            Zoom out
+            </summary>
+        </member>
+        <member name="F:SharpMap.Forms.MapImage.Tools.Query">
+            <summary>
+            Query tool
+            </summary>
+        </member>
+        <member name="F:SharpMap.Forms.MapImage.Tools.None">
+            <summary>
+            No active tool
+            </summary>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.MouseEventHandler">
+            <summary>
+            MouseEventtype fired from the MapImage control
+            </summary>
+            <param name="WorldPos"></param>
+            <param name="ImagePos"></param>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.MapZoomHandler">
+            <summary>
+            Eventtype fired when the zoom was or are being changed
+            </summary>
+            <param name="zoom"></param>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.MapQueryHandler">
+            <summary>
+            Eventtype fired when the map is queried
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.MapCenterChangedHandler">
+            <summary>
+            Eventtype fired when the center has changed
+            </summary>
+            <param name="center"></param>
+        </member>
+        <member name="T:SharpMap.Forms.MapImage.ActiveToolChangedHandler">
+            <summary>
+            Eventtype fired when the map tool is changed
+            </summary>
+            <param name="tool"></param>
+        </member>
+        <member name="T:SharpMap.Web.UI.Ajax.AjaxMapControl">
+            <summary>
+            The Ajax Map Control is a javascript controlled map that is able to refresh
+            the map without the whole webpage has to do a roundtrip to the server.
+            </summary>
+            <remarks>
+            <para>This webcontrol is tested with both IE and FireFox.</para>
+            <para>The webcontrol creates a client-side javascript object named after
+            the ClientID of this control
+            and appends "Obj" to it. Below are a list of some of the properties
+            and methods of the client-side object. The <see cref="P:SharpMap.Web.UI.Ajax.AjaxMapControl.OnViewChanging"/> 
+            and <see cref="P:SharpMap.Web.UI.Ajax.AjaxMapControl.OnViewChange"/> client-side events
+            are also is parsing a reference to this object.</para>
+            <list type="table">
+            <listheader><term>Method/Property</term><description>Description</description></listheader>
+            <item><term>.minX</term><description>World coordinate of the left side of the current view</description></item>
+            <item><term>.maxY</term><description>World coordinate of the top of the current view</description></item>
+            <item><term>.GetCenter()</term><description>Gets a center point object with the current view (use the .x and .y properties of the returned object for the coordinates)</description></item>
+            <item><term>.zoom</term><description>The current zoom level of the map (map width)</description></item>
+            <item><term>.zoomAmount</term><description>The amount to zoom on a zoom-in event (negative values equals zoom out)</description></item>
+            <item><term>.container</term><description>Reference to the map box element</description></item>
+            <item><term>.statusbar</term><description>Reference to the statusbar element</description></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpMap.Web.UI.Ajax.AjaxMapControl"/>
+            </summary>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.GetCallbackResult">
+            <summary>
+            Returns the result of the callback event that targets <see cref="T:SharpMap.Web.UI.Ajax.AjaxMapControl"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.RaiseCallbackEvent(System.String)">
+            <summary>
+            Creates the arguments for the callback handler in the
+            <see cref="M:System.Web.UI.ClientScriptManager.GetCallbackEventReference(System.Web.UI.Control,System.String,System.String,System.String)"/> method. 
+            </summary>
+            <param name="eventArgument"></param>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Sends server control content to a provided HtmlTextWriter object, which writes the content to be rendered on the client.
+            </summary>
+            <param name="writer">The HtmlTextWriter object that receives the server control content.</param>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.CreateChildControls">
+            <summary>
+            Called by the ASP.NET page framework to notify server controls that use
+            composition-based implementation to create any child controls they
+            contain in preparation for posting back or rendering
+            </summary>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.GenerateMap">
+            <summary>
+            Returns a Url to the map
+            </summary>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControl.GenerateClientScripts">
+            <summary>
+            Registers the client-side scripts and creates an initialize script for the current map
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.ZoomSpeed">
+            <summary>
+            Sets the speed which the zoom is (lower = faster).
+            The default value is 15
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.FadeSpeed">
+            <summary>
+            Sets the speed of the fade (lower = faster).
+            The default value is 10
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.OnViewChange">
+            <summary>
+            Client-side method to call when map view have changed
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.OnViewChanging">
+            <summary>
+            Client-side method to call when map are starting to update
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.OnClickEvent">
+            <summary>
+            Gets or sets the clientside method to call when custom click-event is active.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.ClickEventPropertyName">
+            <summary>
+            Gets the name of the clientside ClickEvent property on the map object.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.ToogleClickEventMethodName">
+            <summary>
+            Gets the name of the clientside ToogleClickEvent method to enable or disable 
+            the custom click-event on the map object.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.DisableClickEventMethodName">
+            <summary>
+            Gets the name of the clientside DisableClickEvent method to disable 
+            the custom click-event on the map object.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.EnableClickEventMethodName">
+            <summary>
+            Gets the name of the clientside EnableClickEvent method to enable
+            the custom click-event on the map object.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.UseCache">
+            <summary>
+            Sets whether the control should use the http cache or call a specific maphandler
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.StatusBarText">
+            <summary>
+            Text shown on the map status bar.
+            </summary>
+            <remarks>
+            <para>Use [X] and [Y] to display cursor position in world coordinates and [ZOOM] for displaying the zoom value.</para>
+            <para>The default value is "[X], [Y] - Map width=[ZOOM]"</para>
+            </remarks>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.ResponseFormat">
+            <summary>
+            Formatting of the callback response used when <see cref="P:SharpMap.Web.UI.Ajax.AjaxMapControl.UseCache"/> is false.
+            </summary>
+            <remarks>
+            <para>
+            Use [X] and [Y] for center position, [ZOOM] for zoom value,
+            [WIDTH] for image width and [WIDTH] for image height. These values will automatically
+            be replaced by the current values. The return-result should correspond to the url of
+            a maphandler that renders the map from these values
+            </para>
+            <para>myMapHandler.aspx?Width=[WIDTH]&amp;Height=[HEIGHT]&amp;Zoom=[ZOOM]&amp;X=[X]&amp;Y=[Y]</para>
+            </remarks>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.DisplayStatusBar">
+            <summary>
+            Specifies whether the statusbar is visible or not.
+            </summary>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControl.Map">
+            <summary>
+            The <see cref="T:SharpMap.Map"/> that is to be rendered in the control
+            </summary>
+        </member>
+        <member name="T:SharpMap.Web.UI.Ajax.AjaxMapControlDesigner">
+            <summary>
+            Control used for the VS designer
+            </summary>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControlDesigner.GetDesignTimeHtml">
+            <summary>
+            Returns the design-time HTML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SharpMap.Web.UI.Ajax.AjaxMapControlDesigner.Initialize(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes the designer control
+            </summary>
+            <param name="component"></param>
+        </member>
+        <member name="P:SharpMap.Web.UI.Ajax.AjaxMapControlDesigner.AllowResize">
+            <summary>
+            Allows the control to be resized
+            </summary>
+        </member>
+    </members>
+</doc>

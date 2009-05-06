@@ -1,0 +1,21 @@
+﻿<Window x:Class="Chomo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SHP &lt;-&gt; KML" Height="226" Width="390">
+    <Grid>
+        <Label Height="28" Margin="14,11,10,0" Name="label1" VerticalAlignment="Top">Select Source File</Label>
+        <TextBox Height="25" Margin="12,37,85,0" Name="entSource" VerticalAlignment="Top">Click browse on the right to select source</TextBox>
+        <Button Height="25" HorizontalAlignment="Right" Margin="0,0,10,63.52" Name="btnDestination" VerticalAlignment="Bottom" Width="60" Click="btnDestination_Click">Browse</Button>
+        <TextBox Height="25" Margin="14,101,85,0" Name="entDestination" VerticalAlignment="Top">Click browse on the right to select destination</TextBox>
+        <Button Height="25" HorizontalAlignment="Right" Margin="0,37,10,0" Name="btnSource" VerticalAlignment="Top" Width="60" Click="btnSource_Click">Browse</Button>
+        <Label HorizontalAlignment="Left" Margin="14,70,0,90" Name="label2" Width="137">Select Destination File</Label>
+        <Button Height="39" Margin="145,0,85,14" Name="btnConvert" VerticalAlignment="Bottom" BorderThickness="2" FontSize="14" FontWeight="Bold" Click="btnConvert_Click">
+            <Button.BitmapEffect>
+                <OuterGlowBitmapEffect GlowColor="Green" />
+            </Button.BitmapEffect> Convert</Button>
+        <Button Height="39" HorizontalAlignment="Left" Margin="14,0,0,14" Name="btnCancel" VerticalAlignment="Bottom" Width="82" Click="btnCancel_Click">
+            <Button.BitmapEffect>
+                <OuterGlowBitmapEffect GlowColor="Red" />
+            </Button.BitmapEffect> Cancel</Button>
+    </Grid>
+</Window>
