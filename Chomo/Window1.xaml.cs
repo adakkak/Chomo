@@ -21,9 +21,9 @@ namespace Chomo
             InitializeComponent();
             btnConvert.IsEnabled = false;
 
-             entSource.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.shp";
-             entDestination.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.kml";
-             btnConvert.IsEnabled = true;
+            entSource.Text = @"C:\Users\Abdulmajed Dakkak\Downloads\States\states.shp";
+            entDestination.Text = @"C:\Users\Abdulmajed Dakkak\Downloads\States\out.kml";
+            btnConvert.IsEnabled = true;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -134,6 +134,36 @@ namespace Chomo
                     placemark.Point = new KMLib.Geometry.KmlPoint((float) pointGeom.X, (float) pointGeom.Y);
 
                     placemark.description = description.ToString();
+
+                    kml.Document.Add(placemark);
+                }
+                else if (row.Geometry is SharpMap.Geometries.Polygon)
+                {
+                    var polygonGeom = row.Geometry as SharpMap.Geometries.Polygon;
+                    var placemark = new KMLib.Feature.Placemark();
+
+                    var polygon = new KMLib.Polygon();
+                    var boundary = new KMLib.BoundaryIs();
+                    foreach (SharpMap.Geometries.Point vertex in polygonGeom.ExteriorRing.Vertices)
+                    {
+                        boundary.LinearRing.Coordinates.Add(new Core.Geometry.Point3D(vertex.X, vertex.Y));
+                    }
+                    boundary.LinearRing.CloseRing();
+                    boundary.LinearRing.Extrude = true;
+                    polygon.OuterBoundaryIs = boundary;
+
+                    var interiorRing = new KMLib.BoundaryIs();
+                    for (int j = 0; j < polygonGeom.NumInteriorRing; j++)
+                    {
+                        foreach (SharpMap.Geometries.Point point in polygonGeom.InteriorRing(j).Vertices)
+                        {
+                            interiorRing.LinearRing.Coordinates.Add(new Core.Geometry.Point3D(point.X, point.Y));
+                        }
+                        interiorRing.LinearRing.CloseRing();
+                    }
+                    polygon.InnerBoundaryIs = interiorRing;
+
+                    placemark.Polygon = polygon;
 
                     kml.Document.Add(placemark);
                 }
