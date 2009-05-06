@@ -5,3 +5,10 @@ C:\lib\kml-sharp\KMLib\bin\Release\Core.pdb
 C:\lib\kml-sharp\KMLib\obj\Release\ResolveAssemblyReference.cache
 C:\lib\kml-sharp\KMLib\obj\Release\KMLib.dll
 C:\lib\kml-sharp\KMLib\obj\Release\KMLib.pdb
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\bin\Release\KMLib.dll
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\bin\Release\KMLib.pdb
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\bin\Release\Core.dll
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\bin\Release\Core.pdb
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\obj\Release\KMLib.dll
+C:\Users\Abdulmajed Dakkak\Documents\Visual Studio 2008\Projects\Chomo\Chomo\include\KMLib\obj\Release\KMLib.pdb

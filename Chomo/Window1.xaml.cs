@@ -21,9 +21,9 @@ namespace Chomo
             InitializeComponent();
             btnConvert.IsEnabled = false;
 
-            // entSource.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.shp";
-            // entDestination.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.kml";
-            // btnConvert.IsEnabled = true;
+             entSource.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.shp";
+             entDestination.Text = @"c:\lib\sharpmap-2.0\demowebsite\app_data\cities.kml";
+             btnConvert.IsEnabled = true;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -117,23 +117,21 @@ namespace Chomo
             KMLib.KMLRoot kml = new KMLib.KMLRoot();
             for (int i = 0; i < dt.Rows.Count; i++ )
             {
-                var geo = shp.GetFeature((uint) i).Geometry;
-
+                SharpMap.Data.FeatureDataRow row = dt.Rows[i] as SharpMap.Data.FeatureDataRow;
+                
                 StringBuilder description = new StringBuilder();
 
                 for (int j = 0; j < dt.Columns.Count; j++)
                 {
-                    description.Append("<p><b>" + capitalize(dt.Columns[j].ToString()) + "</b>:  " + dt.Rows[i][j] + "</p>\n");
+                    description.Append("<p><b>" + capitalize(dt.Columns[j].ToString()) + "</b>:  " + row[j] + "</p>\n");
                 }
 
 
-                if (geo is SharpMap.Geometries.Point)
+                if (row.Geometry is SharpMap.Geometries.Point)
                 {
-                    var pointGeom = geo as SharpMap.Geometries.Point;
+                    var pointGeom = row.Geometry as SharpMap.Geometries.Point;
                     var placemark = new KMLib.Feature.Placemark();
                     placemark.Point = new KMLib.Geometry.KmlPoint((float) pointGeom.X, (float) pointGeom.Y);
-
-
 
                     placemark.description = description.ToString();
 
